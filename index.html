@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sección de inicio de sesión -->
+    <div id="login">
+        <h2>Iniciar sesión</h2>
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" placeholder="alumno">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" placeholder="2024">
+        <button onclick="login()">Ingresar</button>
+        <p id="error-message" style="color: red;"></p>
+        <img src="logo.jpg" >
+    </div>
+
+    <!-- Contenido del curso -->
+    <div id="course-content" style="display: none;">
+        <h2>Curso de Introducción a la Programación</h2>
+        <p>Bienvenido al curso, aquí puedes aprender sobre conceptos básicos de programación en JavaScript.</p>
+
+        <!-- Hipervínculos, imágenes y videos -->
+        <ul>
+            <li><a href="https://www.w3schools.com/js/" target="_blank">Documentación oficial de JavaScript</a></li>
+            <li><img src="progra.jpg" alt="Imagen relacionada con el curso" style="width: 300px;"></li>
+                <div class="video-container">
+                
+        </ul>
+        <button onclick="startQuiz()">Ir a la Evaluación</button>
+    </div>
+
+    <!-- Evaluación -->
+    <div id="quiz" style="display: none;">
+        <h2>Evaluación del Curso</h2>
+        <form id="quiz-form">
+            <p>1. ¿Qué es JavaScript?</p>
+            <input type="radio" name="q1" value="1"> Un lenguaje de programación<br>
+            <input type="radio" name="q1" value="0"> Un sistema operativo<br>
+
+            <p>2. ¿Cómo se define una función en JavaScript?</p>
+            <input type="radio" name="q2" value="1"> function nombre() {}<br>
+            <input type="radio" name="q2" value="0"> def nombre() {}<br>
+
+            <p>3. ¿Cuál es el resultado de 2 + 2?</p>
+            <select name="q3">
+                <option value="0">4</option>
+                <option value="1">5</option>
+                <option value="0">6</option>
+            </select><br>
+
+            <p>4. ¿Qué hace el siguiente código: `let x = 10;`?</p>
+            <input type="checkbox" name="q4" value="1"> Declara una variable<br>
+            <input type="checkbox" name="q4" value="0"> Suma dos números<br>
+
+            <p>5. ¿Cuál es el operador de asignación?</p>
+            <input type="radio" name="q5" value="1"> =<br>
+            <input type="radio" name="q5" value="0"> ==<br>
+        </form>
+        <button onclick="submitQuiz()">Enviar respuestas</button>
+        <p id="score"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

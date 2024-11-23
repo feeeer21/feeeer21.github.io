@@ -1,0 +1,41 @@
+body {
+        background-color: #f0f8ff; /* Color de fondo en formato hexadecimal */
+}
+
+h2 {
+    color: #333;
+}
+
+#login, #course-content, #quiz {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="password"], select {
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+img {
+    margin-top: 10px;
+    border-radius: 8px;
+}
